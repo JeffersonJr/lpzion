@@ -1,0 +1,57 @@
+CRITICAL - 2020-08-06 15:53:57 --> syntax error, unexpected '?>'
+#0 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('index', Array, true)
+#1 C:\laragon\www\lpzion\app\Controllers\Home.php(71): view('index', Array)
+#2 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#3 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\lpzion\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#7 {main}
+CRITICAL - 2020-08-06 15:54:28 --> Invalid file: .php
+#0 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+#1 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(525): CodeIgniter\View\View->render('', NULL, true)
+#2 C:\laragon\www\lpzion\app\Views\index.php(62): CodeIgniter\View\View->include('')
+#3 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('index', Array, true)
+#5 C:\laragon\www\lpzion\app\Controllers\Home.php(71): view('index', Array)
+#6 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#7 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\lpzion\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2020-08-06 15:54:45 --> Use of undefined constant Hello - assumed 'Hello' (this will throw an Error in a future version of PHP)
+#0 C:\laragon\www\lpzion\app\Views\index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\laragon\\www\\...', 62, Array)
+#1 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('index', Array, true)
+#3 C:\laragon\www\lpzion\app\Controllers\Home.php(71): view('index', Array)
+#4 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\lpzion\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2020-08-06 15:54:53 --> Invalid file: hello.php
+#0 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hello.php')
+#1 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(525): CodeIgniter\View\View->render('hello', NULL, true)
+#2 C:\laragon\www\lpzion\app\Views\index.php(62): CodeIgniter\View\View->include('hello')
+#3 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('index', Array, true)
+#5 C:\laragon\www\lpzion\app\Controllers\Home.php(71): view('index', Array)
+#6 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#7 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\lpzion\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2020-08-06 17:02:10 --> syntax error, unexpected ')'
+#0 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\lpzion\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\lpzion\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#9 {main}
