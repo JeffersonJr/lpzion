@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <!-- Theme style
-    <link rel="stylesheet" href="src/adminlte/css/adminlte.min.css">-->
+    <link rel="stylesheet" href="src/adminlte/css/adminlte.min.css"> -->
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

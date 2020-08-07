@@ -1,6 +1,6 @@
 <!-- card section -->
 <div class="card-section">
-    <div class="row">
+    <div class="row" style="display: flow-root">
 
         <!-- single card -->
         <a title="Siscomex Importação"
@@ -46,7 +46,7 @@
     </div>
 </div>
 <div class="card-section">
-    <div class="row">
+    <div class="row" style="display: flow-root">
 
         <!-- single card -->
         <a title="Siscomex Importação" href="https://www.mercante.transportes.gov.br/g33159MT/jsp/logon.jsp"
