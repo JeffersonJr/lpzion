@@ -81,7 +81,7 @@
         <!-- Footer section -->
         <footer class="footer-section">
             <h2>2020 Todos os direitos reservados. Projetado por
-                <a href="https://jeffersonjunior.com.br" target="_blank">Jefferson Junior Desenvolvedor Web</a>
+                <a href="http://novaversao.website/zion/" target="_blank">Zion Tecnologia</a>
             </h2>
         </footer>
         <!-- Footer section end -->
