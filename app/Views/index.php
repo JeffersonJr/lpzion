@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="background-color: #2BE6AB;">
 <head>
     <title>Zion - Siscomex</title>
     <meta charset="UTF-8">
@@ -17,14 +17,19 @@
     <link rel="stylesheet" href="src/css/magnific-popup.css">
     <link rel="stylesheet" href="src/css/style.css">
 
-    <!-- Theme style
-    <link rel="stylesheet" href="src/adminlte/css/adminlte.min.css"> -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="src/adminlte/css/adminlte.min.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<style>
+    a {
+        color: #333333;
+    }
+</style>
 <body>
 
 <div id="app">
@@ -38,18 +43,18 @@
     </div>
     <!-- Page Preloder end-->
 
-    <!-- Page header -->
-    <div class="page-top-section">
-        <div class="hero-content">
-            <div class="hero-center">
-                <img src="src/img/logo-white.png" alt="logo-zion">
-                <p style="color: #FFFFFF">Acessos aos Sistemas de Importação, Exportação e Desembaraço do Governo
-                    Federal,<br> Receita Federal e Órgãos Competentes</p>
+    <nav class="fixed-top mt-1 mr-1">
+        <div class="col-12">
+            <div class="col-2 offset-10">
+                <form class="float-right">
+                    <a href="http://novaversao.website/zion" target="_blank" class="text-white">Página inicial</a>
+                </form>
             </div>
         </div>
-        <!-- slider -->
-        <div class="item hero-item" data-bg="src/img/01.jpg" style="background-attachment: fixed"></div>
-    </div>
+    </nav>
+
+    <!-- Page header -->
+    <?= $this->include('header') ?>
     <!-- Page header end-->
 
     <!-- content section -->
@@ -59,31 +64,29 @@
     <!-- About section -->
     <div class="about-section">
 
-    <div class="row" style="margin: 10px">
-        <div class="col-md-1 order-md-1">
-        </div>
-        <div class="col-md-6 order-md-1">
-            <!-- card section -->
-            <?= $this->include('about') ?>
-            <!-- card section end -->
+        <div class="row" style="margin: 10px">
+            <div class="col-md-6 order-md-1 offset-1">
+                <!-- card section -->
+                <?= $this->include('about') ?>
+                <!-- card section end -->
 
-            <!-- Shotcurts section -->
-            <?= $this->include('shotcurt') ?>
-            <!-- Shotcurts section end-->
+                <!-- Shotcurts section -->
+                <?= $this->include('shotcurt') ?>
+                <!-- Shotcurts section end-->
+
+                <!-- Contact section -->
+                <?= $this->include('contact') ?>
+                <!-- Contact section end -->
+            </div>
+            <div class="col-md-4 order-md-2 mb-4">
+                <!-- News section -->
+                <?= $this->include('/feed') ?>
+                <!-- News section end -->
+            </div>
         </div>
-        <div class="col-md-4 order-md-2 mb-4">
-            <!-- News section -->
-            <?= $this->include('/feed') ?>
-            <!-- News section end -->
-        </div>
-    </div>
 
         <!-- Footer section -->
-        <footer class="footer-section">
-            <h2>2020 Todos os direitos reservados. Projetado por
-                <a href="http://novaversao.website/zion/" target="_blank">Zion Tecnologia</a>
-            </h2>
-        </footer>
+        <?= $this->include('footer') ?>
         <!-- Footer section end -->
 
     </div>
@@ -107,9 +110,33 @@
     vm = new Vue({
         el: '#app',
         data: {
-            itens:<?= json_encode($itens) ?>
+            itens:<?= json_encode($itens) ?>,
+            exportacao: ,
+            importacao: ,
+            sistema: ,
         }
     })
+
+    /* Back to top */
+    $(document).ready(function () {
+
+        //Verifica se a Janela está no topo
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+
+        //Onde a mágia acontece! rs
+        $('.scrollToTop').click(function () {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+
+    });
+
 </script>
 
 </body>
